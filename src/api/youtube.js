@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import axios from 'axios';
 
-export default class youtube extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        )
+export default axios.create({
+    baseURL: '',
+    params: {
+      part: 'snippet',
+      maxResults: '10',
+      key: '[API KEY]'
     }
-}
+})
