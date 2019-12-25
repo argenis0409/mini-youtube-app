@@ -10,6 +10,14 @@ export default class Search extends Component {
         this.setState({ searchItem: e.target.value })
     }
    
+    handleSubmit = (e) => {
+        const { searchItem } = this.state;
+        const { onFormSubmit } = this.props;
+
+        onFormSubmit(searchItem);
+
+        e.preventDefault();
+    }
     render() {
         return (
            <Paper elevation={6} style={{ padding: '25px'}}>
