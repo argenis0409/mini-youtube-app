@@ -1,10 +1,7 @@
 import axios from 'axios';
 
 export default axios.create({
-    baseURL: '',
-    params: {
-      part: 'snippet',
-      maxResults: '10',
-      key: '[API KEY]'
-    }
+    baseURL: 'https://www.googleapis.com/youtube/v3',
+    responseType: "json",
+    kind: "youtube#video"
 })
