@@ -34,7 +34,7 @@ export default class App extends Component {
             <Search onFormSubmit={this.handleSubmit} />
             </Grid>
               <Grid item xs={8}>
-                <Details />
+                <Details video={selectedVideo} />
               </Grid>
               <Grid item xs={4}>
                 {/* {video here} */}
