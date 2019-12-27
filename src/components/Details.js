@@ -1,11 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { Paper, Typography } from '@material-ui/core';
 
-export default class Details extends Component {
-    render() {
-        return (
-            <div>
-                <h1>Video Details</h1>
-            </div>
-        )
-    }
+const Details = ({video}) => {
+    return(
+     <>
+     <Paper elevation={6} style={{height: '70%'}}>
+
+     </Paper>
+     <Paper elevation={6} style={{padding: '15px'}}>
+         
+     </Paper>
+     </>
+    )
 }
+
+export default Details;
