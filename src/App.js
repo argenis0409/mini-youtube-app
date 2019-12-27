@@ -5,6 +5,10 @@ import Search from './components/Search';
 import Details from './components/Details';
 
 export default class App extends Component {
+  state = {
+    videos: [],
+    selectedVideo: null
+  }
 
   handleSubmit = async (searchItem) => {
     const response = await youtube.get('search', { 
@@ -12,11 +16,13 @@ export default class App extends Component {
       params: {
         part: 'snippet',
         maxResults: '5',
-        key: '[API_KEY]',
+        key: process.env.API_KEY,
         q: searchItem,
       }
     });
-    console.log(response)
+   this.setState({
+     videos: response.data.items, selectedVideo: response.data.items[0]
+   })
   }
 
   render() {
