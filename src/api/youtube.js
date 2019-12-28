@@ -1,7 +1,5 @@
 import axios from 'axios';
 
 export default axios.create({
-    baseURL: 'https://www.googleapis.com/youtube/v3',
-    responseType: "json",
-    kind: "youtube#video"
+    baseURL: 'https://www.googleapis.com/youtube/v3'
 })
