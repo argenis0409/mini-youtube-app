@@ -1,29 +1,24 @@
-# Node 
-node_modules/
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Project
-dist/
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-*.csv
-*.dat
-*.iml
-*.log
-*.out
-*.pid
-*.seed
-*.sublime-*
-*.swo
-*.swp
-*.tgz
-*.xml
+# testing
+/coverage
+
+# production
+/build
+
+# misc
 .DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 .env
-.idea
-.project
-.strong-pm
-.vscode
-coverage
-lib-cov
-logs
-npm-debug.log
-reports
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
