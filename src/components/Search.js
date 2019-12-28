@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import { Paper, TextField } from '@material-ui/core';
 
 export default ({ onSubmit }) => {
